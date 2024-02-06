@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-109dp"
+    tools:layout_editor_absoluteY="-14dp">
+
+    <TextView
+        android:id="@+id/textViewBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Araç Bilgisi"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinibusCalistir" />
+
+    <Button
+        android:id="@+id/buttonArabaKapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="7dp"
+        android:text="Araba Kapı Sayısı"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonArabaHiz"
+        app:layout_constraintEnd_toStartOf="@+id/buttonArabaHiz"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonArabaHiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Araba maksimum hızı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonArabaKapi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonArabaCalistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Araba’yı Çalıştır"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonArabaIseGit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonArabaIseGit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="30dp"
+        android:text="Araba İşe Git"
+        app:layout_constraintStart_toStartOf="@+id/buttonArabaHiz"
+        app:layout_constraintTop_toBottomOf="@+id/buttonArabaHiz" />
+
+    <Button
+        android:id="@+id/buttonMinibusKapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="Minibüs Kapı Sayısı"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMinibusHiz"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMinibusHiz"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMinibusHiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Minibüs maksimum hızı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinibusKapi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonArabaIseGit" />
+
+    <Button
+        android:id="@+id/buttonMinibusCalistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Minibüs’ü Çalıştır"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMinibusYolcuIndir"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMinibusYolcuIndir"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMinibusYolcuIndir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Minibüs Yolcu İndir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinibusCalistir"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMinibusHiz" />
+</androidx.constraintlayout.widget.ConstraintLayout>
